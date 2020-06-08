@@ -30,8 +30,10 @@ class VariableClassBuilder:
     _instance = None
 
     # TO BE REMOVED. FOR TESTING PURPOSES ONLY
-    MODULE_DIR = '/Users/William/PycharmProjects/dynamic_subdag_setup/dags/variables'
-    DEST_DIR = '/Users/William/PycharmProjects/dynamic_subdag_setup/dags/tables'
+    MODULE_DIR = os.path.join(pathlib.Path(__file__).parent.parent)
+    DEST_DIR = os.path.join(pathlib.Path(__file__).parent.parent)
+    # MODULE_DIR = '/Users/William/PycharmProjects/dynamic_subdag_setup/dags/variables'
+    # DEST_DIR = '/Users/William/PycharmProjects/dynamic_subdag_setup/dags/tables'
 
     def __new__(cls, *args, **kwargs):
         if not cls._instance:
@@ -156,4 +158,4 @@ class VariableClassBuilder:
 # Create the VariableClassBuilder Instance #
 ########################################################################################################################
 variable_class_builder = VariableClassBuilder()
-
+print(os.path.join(pathlib.Path(__file__).parent.parent))
