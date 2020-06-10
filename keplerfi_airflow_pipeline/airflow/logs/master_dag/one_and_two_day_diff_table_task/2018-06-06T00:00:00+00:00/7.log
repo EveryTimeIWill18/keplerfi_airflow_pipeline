@@ -1,0 +1,15 @@
+[2020-06-10 16:42:51,264] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: master_dag.one_and_two_day_diff_table_task 2018-06-06T00:00:00+00:00 [queued]>
+[2020-06-10 16:42:51,476] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: master_dag.one_and_two_day_diff_table_task 2018-06-06T00:00:00+00:00 [queued]>
+[2020-06-10 16:42:51,476] {taskinstance.py:866} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-10 16:42:51,476] {taskinstance.py:867} INFO - Starting attempt 7 of 8
+[2020-06-10 16:42:51,476] {taskinstance.py:868} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-10 16:42:51,645] {taskinstance.py:887} INFO - Executing <Task(SubDagOperator): one_and_two_day_diff_table_task> on 2018-06-06T00:00:00+00:00
+[2020-06-10 16:42:51,664] {standard_task_runner.py:53} INFO - Started process 186 to run task
+[2020-06-10 16:42:52,367] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: master_dag.one_and_two_day_diff_table_task 2018-06-06T00:00:00+00:00 [running]> e2d59e06d169
+[2020-06-10 16:42:57,921] {logging_mixin.py:112} INFO - [2020-06-10 16:42:57,920] {dagrun.py:318} INFO - Marking run <DagRun master_dag.one_and_two_day_diff_table_task @ 2018-06-06 00:00:00+00:00: backfill_2018-06-06T00:00:00+00:00, externally triggered: False> successful
+[2020-06-10 16:42:57,972] {logging_mixin.py:112} INFO - [2020-06-10 16:42:57,971] {backfill_job.py:364} INFO - [backfill progress] | finished run 1 of 1 | tasks waiting: 0 | succeeded: 1 | running: 0 | failed: 0 | skipped: 0 | deadlocked: 0 | not ready: 0
+[2020-06-10 16:42:57,972] {logging_mixin.py:112} INFO - [2020-06-10 16:42:57,972] {backfill_job.py:814} INFO - Backfill done. Exiting.
+[2020-06-10 16:42:58,257] {taskinstance.py:1048} INFO - Marking task as SUCCESS.dag_id=master_dag, task_id=one_and_two_day_diff_table_task, execution_date=20180606T000000, start_date=20200610T164251, end_date=20200610T164258
+[2020-06-10 16:43:00,951] {logging_mixin.py:112} INFO - [2020-06-10 16:43:00,951] {local_task_job.py:103} INFO - Task exited with return code 0

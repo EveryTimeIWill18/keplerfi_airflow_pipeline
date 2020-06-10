@@ -1,0 +1,15 @@
+[2020-06-10 16:42:28,063] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: master_dag.two_day_diff_task 2018-06-07T00:00:00+00:00 [queued]>
+[2020-06-10 16:42:28,256] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: master_dag.two_day_diff_task 2018-06-07T00:00:00+00:00 [queued]>
+[2020-06-10 16:42:28,257] {taskinstance.py:866} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-10 16:42:28,257] {taskinstance.py:867} INFO - Starting attempt 7 of 8
+[2020-06-10 16:42:28,257] {taskinstance.py:868} INFO - 
+--------------------------------------------------------------------------------
+[2020-06-10 16:42:28,428] {taskinstance.py:887} INFO - Executing <Task(SubDagOperator): two_day_diff_task> on 2018-06-07T00:00:00+00:00
+[2020-06-10 16:42:28,470] {standard_task_runner.py:53} INFO - Started process 170 to run task
+[2020-06-10 16:42:29,540] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: master_dag.two_day_diff_task 2018-06-07T00:00:00+00:00 [running]> e2d59e06d169
+[2020-06-10 16:42:35,239] {logging_mixin.py:112} INFO - [2020-06-10 16:42:35,238] {dagrun.py:318} INFO - Marking run <DagRun master_dag.two_day_diff_task @ 2018-06-07 00:00:00+00:00: backfill_2018-06-07T00:00:00+00:00, externally triggered: False> successful
+[2020-06-10 16:42:35,292] {logging_mixin.py:112} INFO - [2020-06-10 16:42:35,292] {backfill_job.py:364} INFO - [backfill progress] | finished run 1 of 1 | tasks waiting: 0 | succeeded: 2 | running: 0 | failed: 0 | skipped: 0 | deadlocked: 0 | not ready: 0
+[2020-06-10 16:42:35,293] {logging_mixin.py:112} INFO - [2020-06-10 16:42:35,293] {backfill_job.py:814} INFO - Backfill done. Exiting.
+[2020-06-10 16:42:35,589] {taskinstance.py:1048} INFO - Marking task as SUCCESS.dag_id=master_dag, task_id=two_day_diff_task, execution_date=20180607T000000, start_date=20200610T164228, end_date=20200610T164235
+[2020-06-10 16:42:37,771] {logging_mixin.py:112} INFO - [2020-06-10 16:42:37,771] {local_task_job.py:103} INFO - Task exited with return code 0

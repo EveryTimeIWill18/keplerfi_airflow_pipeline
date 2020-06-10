@@ -49,6 +49,17 @@ DATABASE_CSV = os.path.join(
     Path(__file__).parent.parent.parent.parent,
     'hidden_data', 'database_config.csv')
 
+#CONFIG_INI = os.path.join(os.getcwd(), 'config.ini')
+#DATABASE_CSV = os.path.join(os.getcwd(), 'database_config.csv')
+CONFIG_INI = '/usr/local/hidden_data/config.ini'
+DATABASE_CSV = '/usr/local/hidden_data/database_config.csv'
+
+
+
+#print(DATABASE_CSV)
+#print(__file__)
+#print(os.getcwd())
+#print(os.path.dirname(__file__))
 
 
 # To be used in Keplerfi gcloud compute

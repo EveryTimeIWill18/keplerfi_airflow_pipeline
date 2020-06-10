@@ -37,6 +37,13 @@ ENV LC_MESSAGES en_US.UTF-8
 COPY /hidden_data /usr/local/hidden_data
 COPY /requirements.txt /usr/local/requirements.txt
 COPY /airflow /usr/local/airflow
+COPY /airflow/airflow.cfg  ${AIRFLOW_USER_HOME}/airflow.cfg
+
+# Set up a Volume for logs
+VOLUME /airflow/logs ${AIRFLOW_USER_HOME}/logs
+
+
+
 
 # Run shell command to add the airflow user directory
 RUN useradd -ms /bin/bash -d ${AIRFLOW_USER_HOME} airflow
@@ -52,6 +59,12 @@ RUN set -ex \
         libpq-dev \
         git \
     '
+
+# Install vim for editing inside the Docker shell
+RUN apt-get update \
+	&& apt-get -y install vim
+
+
 # Run shell command to isntall packages
 RUN apt-get update -yqq \
     && apt-get upgrade -yqq \
@@ -82,8 +95,21 @@ RUN pip install -U pip setuptools wheel \
     && pip install pyasn1 \
     && pip install apache-airflow[crypto,celery,postgres,hive,jdbc,mysql,ssh]==${AIRFLOW_VERSION}
 
+# supervisord setup - New (06/10/2020)                       
+RUN apt-get update && apt-get install -y supervisor 
+COPY supervisord.conf /usr/local/supervisor/supervisord.conf
 
-#ENTRYPOINT echo "Hello, ${name}"
+
+
+# New - (06/10/2020)
+#COPY script/entrypoint.sh /entrypoint.sh
+
+#RUN chown -R airflow: ${AIRFLOW_USER_HOME}
+#USER airflow
+# END- New
+
+
 EXPOSE 8080 5555 8793
 
-#ENTRYPOINT [ "/config.sh" ]
+# New - (06/10/2020)
+#ENTRYPOINT ["sh","/entrypoint.sh"]

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ml-for-fundamental",
+  "private_key_id": "cb549fdca32ef15f8b2829b6605438b79da8c026",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCmF8bhbOIIxsCE\nSPZRB8VXch3bAowqzPCwqJloUXGGQn0ng+Nw2tDx7HahODUX+qzkcXS8MFhjKnAB\ntI3S3YoV8yaGiChetVoYdyiXiz0Uy7OIwdpYb0H5HjidlJ8Y5vP1uGV0kxd+Yacb\n8ITEXiLMl4sn2HLBArukr0gPGbVnNDd8CooIxC9vzPHU9/bTe+Ii3sjUBD6TdrUa\nOfQV/atG4vpB/tCCx33p7l8V48sUD/1wPkUM01XyJl7xHeCezZHZBUCudn2+bl5A\nQPe2AmrsJGF1clQ48tXNYcOSa4zpfWVlM90vWn9AlJQYZgIQC6BLNllCbTiFeT1D\nIltcoO8bAgMBAAECggEAF2AeSeigkTqjqpp4LCRLVkjFweaEYpuwPjSkToWz1AD0\ni0SpFF9/a6TrdzopYsQRZB9BniCxt9cnp13JXgV24yry35k3EUk1sl7G1Dkw8gXP\nMS6TM8IIx25E6oyZrZAHgqwefz8aXduRgMGjdd2HyUKEv6lbUSW40e8nVZS5Lpp0\nv4o6bx/Brto/nDk/AILZytLPEJIU0Cc1joLHdxd8N0LYvmC7LroTL3tAeh206XZQ\nT5ZI71Y5RNieemrwpWZFLizrTPdTE5MuLpFUrSlOYxiaAj+3CvQXb1HCGZ+p9Wyf\nAwTbKY0BsryGwtZibw7q3zJ/pcPJhcwwfgYTo2/ihQKBgQDpKy9QqoUOwwcmAYyB\n0DoF0DtTWyd2Yhk1gx7KE8GbSkR5UG1gqeyt1JfTJuYq9FZPZYxx6aeuXVIhaQOW\nsOhCsizR3toxcQuM5GF+tHrw6ynCpIkfdidbRu6VCdoaMnTZGkigHYzjYgqfJX5s\nz6B+znFoG8IBqZrLERZuYwV0nwKBgQC2WzWt0bPw0mkb2EfpCUGobf0KtxJWwDh3\nlzUy+ixRFGrg/4QLGM82rckCmsMzNTcnSwdL12FtZ5A+uV7UFc9d0mXDUJlsmSaK\nUAVoQYTvhaKeoDxsBE6nGj2vlaIupJZ9ZeocBASc3JqKZoPLqtJ3H3Ixt1g0VK5v\neDW05TFYBQKBgE7QEgYqHR+IPHpUO7IFOBeO8v6R6RzSu8Kit12GoAJlcA+xZ8cs\nqJt5KHhuxY3vWN0tbfNzDwKY+JHidRwSX+9rWkr2ELp1g3n0GCBD0OpuEoeAJflE\nbrkjmLE3y0jflS9s+u9kDaMuGHkCq2EMLSuvjBWsjD8TnQbWl8ZoIgfxAoGAZZxx\nTse5AoncM73SZBHaWiXfiCb2uwwk6s6AwEUSiKNd4r2+MAjE/ezcQu1Fs7UFZIm0\nKRh8m1/Hyou0QW1dvSPNvIWe2BqGlS99s9g+YNEQCl+zC2VjBk3i7YHtexwPFxTA\n3JeIkneCTXhOHCC1YddN5FILfi1pfYd4NbI4SpkCgYEA2IrmPEFIznxann17xbE/\nLfMIg/MA6eTaaUM7RVYD6nk8z82tI/BJrXW3iydd0ABelFJh9L5af5QokqzLVoK8\nx1xmkVkCbpHJEwpu/GEqJ4KNaCQ1APNORrcX+VlNikIds/eHClOfbY1lAmVs2Zpo\nG8q1iE1V6B7Nodvhffqb7do=\n-----END PRIVATE KEY-----\n",
+  "client_email": "biqquery-20200228@ml-for-fundamental.iam.gserviceaccount.com",
+  "client_id": "105588163177515787068",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/biqquery-20200228%40ml-for-fundamental.iam.gserviceaccount.com"
+}
